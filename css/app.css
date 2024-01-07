@@ -1,0 +1,166 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif !important;
+  padding: 0 !important;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+body::-webkit-scrollbar {
+  display: none !important;
+}
+
+.navbar-nav {
+  background-color: #113468;
+}
+
+.sectionone {
+  background-image: url("../assets/images/bgcover.png");
+  filter: blur();
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  color: #3d3b40;
+}
+
+.herobg {
+  background-color: #3d3b40;
+}
+
+.separator {
+  background-color: #3d3b40;
+}
+
+.btndate {
+  color: #3d3b40;
+  font-size: 1rem;
+}
+
+.font-esthetic {
+  font-family: "Dancing Script", cursive !important;
+  color: #118df0;
+}
+
+.font-esthetic-dark {
+  font-family: "Dancing Script", cursive !important;
+  color: #113468;
+}
+
+.font-arabic {
+  font-family: "Noto Naskh Arabic", serif !important;
+  color: #e4cc7f !important;
+}
+
+.img-crop {
+  width: 14rem;
+  height: 14rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.img-crop > img {
+  display: inline;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}
+
+.btn-music {
+  position: fixed;
+  bottom: 9vh !important;
+  right: 2vh !important;
+  z-index: 1055 !important;
+}
+
+.loading-page {
+  position: fixed;
+  inset: 0 !important;
+  width: 100%;
+  height: 100%;
+  z-index: 1056 !important;
+  background-image: url("../assets/images/bgcover.png");
+  background-size: cover;
+  background-position: center center;
+  color: #000;
+}
+
+.card-body {
+  background-color: #f8edff;
+  overflow-wrap: break-word !important;
+  color: #000;
+}
+
+.mouse-animation {
+  padding: 0.25rem 0.625rem;
+  height: 2rem;
+  border: 0.1rem solid #118df0;
+  border-radius: 1.4rem;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+
+.btn-map {
+  background-color: #118df0;
+  color: #000000;
+  border-radius: 16px;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+.mouse-animation > .scroll-animation {
+  width: 0.25rem;
+  height: 0.625rem;
+  border-radius: 25%;
+  background-color: #118df0;
+  animation-name: scroll;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin-icon {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-button {
+  animation: spin-icon 5s linear infinite;
+}
+
+.dark-section {
+  background-color: #3d3b40 !important;
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+}
+
+footer {
+  background-color: #3d3b40 !important;
+  margin-top: -0.5rem;
+  padding-bottom: 5rem;
+  color: #f8edff;
+}
